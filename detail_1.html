@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail e-commerce</title>
+    <link rel="icon" href="assets/image/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/image/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SHOP
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">PAYMENT CONFIRMATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">TRACK YOUR ORDER</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <!-- <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              /> -->
+            <button class="btn-navbar" type="submit">
+              <iconify-icon
+                icon="fluent:search-20-regular"
+                width="30"
+              ></iconify-icon>
+            </button>
+          </form>
+          <button class="btn-navbar">Login</button>
+          <button class="btn-navbar" id="hideSidebarButton">
+            Cart
+            <iconify-icon icon="fe:cart"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="tes"></div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            style="max-width: 60%; margin: 0 auto"
+          >
+            <div class="carousel-inner" id="image-carousel"></div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <h3 id="title-product" style="font-weight: bold"></h3>
+          <p class="" id="harga-product" style="font-weight: bold"></p>
+          <form>
+            <label for="select-variant">Varian :</label>
+            <select class="w-25 form-select" id="select-variant"></select>
+            <br />
+            <br />
+            <br />
+            <button type="button" id="button" class="btn-detail">
+              Add to Cart
+            </button>
+          </form>
+          <div class="container mt-3">
+            <p>Deskripsi : tambah Deskripsi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container row" style="margin: 200px auto">
+      <div class="col-4">
+        <h3 class="text-center">Help</h3>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-outline-success d-flex align-items-center">
+            <iconify-icon icon="logos:whatsapp-icon" width="30"></iconify-icon>
+            <span class="mx-2">Silahkan hubungi kami</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-4">
+        <h3 class="text-center">About Us</h3>
+        <div class="text-center">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <h3 class="text-center">Contact Us</h3>
+        <div class="d-flex justify-content-center gap-2">
+          <a href="#" class="btn"
+            ><iconify-icon icon="line-md:instagram" width="30"></iconify-icon
+          ></a>
+          <a href="#" class="btn"
+            ><iconify-icon
+              icon="ant-design:facebook-outlined"
+              width="30"
+            ></iconify-icon
+          ></a>
+          <a href="#" class="btn"
+            ><iconify-icon icon="simple-icons:shopee" width="30"></iconify-icon
+          ></a>
+          <a href="#" class="btn"
+            ><iconify-icon icon="ri:line-line" width="30"></iconify-icon
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
+<script>
+  $.urlParam = function (name) {
+    var results = new RegExp("[?&]" + name + "=([^&#]*)").exec(
+      window.location.href
+    );
+    return results !== null ? results[1] || 0 : false;
+  };
+  var id = $.urlParam("id");
+  // console.log("ID yang diambil dari URL: " + id);
+
+  // Fungsi untuk mengonsumsi API dan memasukkan hasilnya ke dalam card
+  function populateVariant(data, index) {
+    var isActiveClass = index === 0 ? "active" : ""; // Tambahkan kelas "active" jika ini adalah item pertama
+    // console.log(index);
+    var imageTemplate = `
+        <div class="carousel-item ${isActiveClass}">
+          <img
+          src="https://sistemtoko.com/img/user/demo/product/${data.product_img}"
+          class="d-block w-100"
+          alt="..."
+           />
+        </div>
+      `;
+    $("#image-carousel").append(imageTemplate);
+
+    var variant = `
+    <option value="${data.product_id}" data-price="${data.product_price}">${data.varian_keyword_value}</option>
+    `;
+
+    $("#select-variant").append(variant);
+
+    if (index === 0) {
+      updatePrice(data.product_price);
+      updateProductName(data.product_name);
+    }
+  }
+
+  function formatRupiah(number) {
+    var formatter = new Intl.NumberFormat("id-ID", {
+      style: "currency",
+      currency: "IDR",
+      minimumFractionDigits: 0,
+    });
+    return formatter.format(number).replace(/\s/g, "").replace(",00", ",-");
+  }
+
+  function updatePrice(price) {
+    var formattedPrice = formatRupiah(price);
+    $("#harga-product").text(formattedPrice);
+  }
+
+  function updateProductName(name) {
+    $("#title-product").text(name);
+  }
+
+  $("#select-variant").on("change", function () {
+    var selectedOption = $(this).find("option:selected");
+    var selectedPrice = selectedOption.data("price");
+    var selectedName = selectedOption.data("name");
+
+    updatePrice(selectedPrice);
+    updateProductName(selectedName);
+  });
+  // Fungsi untuk memuat data dari halaman berikutnya
+  // Menggunakan jQuery untuk melakukan permintaan GET ke halaman berikutnya
+  $.get("https://sistemtoko.com/public/demo/varian/" + id, function (response) {
+    // Memproses data API dan memanggil fungsi populateCard untuk setiap hasil
+    // console.log(response);
+    response.forEach((data, index) => {
+      populateVariant(data, index);
+    });
+  });
+
+  //CART
+  $(document).ready(function () {
+    $.ajaxSetup({
+      headers: { "X-Requested-With": "XMLHttpRequest" },
+    });
+
+    $.get("https://demo.sistemtoko.com/api-view/cart", function (data) {
+      // console.log(data);
+      $("#tes").append(data);
+    });
+
+    $("#button").click(function () {
+      var selectedOption = $("#select-variant option:selected");
+      product_id = selectedOption.val();
+      $.get(
+        "https://sistemtoko.com/public/demo/single/" + product_id,
+        function (productData) {
+          console.log(productData);
+          product_id = productData.product_id;
+          product_name = productData.product_name;
+          product_img = `https://sistemtoko.com/img/user/demo/product/${productData.product_img}`;
+          product_price = productData.product_price;
+          product_qty = 0;
+          product_weight = productData.product_weight;
+          product_stock = productData.product_qty_stock;
+          varian = productData.varian_keyword_value;
+          // Memanggil fungsi addCart dengan data produk yang dipilih
+          addCart(
+            product_id,
+            product_name + "-" + varian,
+            product_img,
+            product_price,
+            product_weight
+          );
+        }
+      );
+    });
+  });
+
+  $(document).ready(function () {
+    $("#hideSidebarButton").click(function () {
+      console.log("click");
+      if ($("#cart-wrapper").hasClass("toggled")) {
+        // Sidebar sedang disembunyikan, jadi tampilkan
+        $("#cart-wrapper").removeClass("toggled");
+      } else {
+        // Sidebar sedang ditampilkan, jadi sembunyikan
+        $("#cart-wrapper").addClass("toggled");
+      }
+    });
+  });
+</script>
